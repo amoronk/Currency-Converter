@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/64c67260-ecff-44aa-b763-c1394a5e12b1
 
 ## Libraries & Frameworks
 
-- **Kotlin** - 100% Kotlin codebase
+- **Kotlin** - Kotlin codebase
 - **Jetpack Compose** - Modern UI toolkit for building native UI
 - **MVVM Architecture** - Clear separation of concerns
 - **Hilt** - Dependency injection
