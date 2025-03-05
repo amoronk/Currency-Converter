@@ -224,10 +224,10 @@ class CurrencyConverterViewModel @Inject constructor(
                             if (response.isSuccessful) {
                                 _state.update { currentState ->
                                     currentState.copy(
-                                        toAmount = response.convertedAmount.format(),
+                                        toAmount = response.convertedAmount?.format().orEmpty(),
                                         isConverting = false,
                                         errorMessage = null,
-                                        exchangeRateTimestamp = response.timestamp.toFormattedTime()
+                                        exchangeRateTimestamp = response.timestamp?.toFormattedTime().orEmpty()
                                     )
                                 }
                             } else {

@@ -40,12 +40,12 @@ class CurrencyMapper @Inject constructor() {
     fun mapToCurrencyConversionDomainModel(response: CurrencyConversionResponse): CurrencyConversion {
         return CurrencyConversion(
             isSuccessful = response.isSuccessful,
-            sourceCurrency = response.conversionRequest.sourceCurrency,
-            targetCurrency = response.conversionRequest.targetCurrency,
-            sourceAmount = response.conversionRequest.amountToConvert,
+            sourceCurrency = response.conversionRequest?.sourceCurrency,
+            targetCurrency = response.conversionRequest?.targetCurrency,
+            sourceAmount = response.conversionRequest?.amountToConvert,
             convertedAmount = response.convertedAmount,
-            exchangeRate = response.conversionDetails.exchangeRate,
-            timestamp = response.conversionDetails.timestamp,
+            exchangeRate = response.conversionDetails?.exchangeRate,
+            timestamp = response.conversionDetails?.timestamp,
             isHistorical = response.historical ?: false,
             error = response.error?.info
         )

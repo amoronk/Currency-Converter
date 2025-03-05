@@ -4,12 +4,12 @@ import java.math.BigDecimal
 
 data class CurrencyConversion(
     val isSuccessful: Boolean,
-    val sourceCurrency: String,
-    val targetCurrency: String,
-    val sourceAmount: BigDecimal,
-    val convertedAmount: BigDecimal,
-    val exchangeRate: Double,
-    val timestamp: Long,
-    val isHistorical: Boolean,
+    val sourceCurrency: String? = null,
+    val targetCurrency: String? = null,
+    val sourceAmount: BigDecimal? = null,
+    val convertedAmount: BigDecimal? = null,
+    val exchangeRate: Double? = null,
+    val timestamp: Long? = null,
+    val isHistorical: Boolean? = false,
     val error: String? = null
 )
