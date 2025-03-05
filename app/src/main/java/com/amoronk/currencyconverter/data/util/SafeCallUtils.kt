@@ -1,7 +1,5 @@
 package com.amoronk.currencyconverter.data.util
 
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
 import java.io.IOException
 import java.net.UnknownHostException

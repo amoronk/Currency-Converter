@@ -7,13 +7,13 @@ data class CurrencyConversionResponse(
     @SerializedName("success")
     val isSuccessful: Boolean,
     @SerializedName("query")
-    val conversionRequest: CurrencyConversionRequest,
+    val conversionRequest: CurrencyConversionRequest? = null,
     @SerializedName("info")
-    val conversionDetails: ConversionDetails,
+    val conversionDetails: ConversionDetails? = null,
     @SerializedName("historical")
     val historical: Boolean? = null,
     @SerializedName("result")
-    val convertedAmount: BigDecimal,
+    val convertedAmount: BigDecimal? = null,
     @SerializedName("error")
     val error: ErrorResponse? = null
 )
